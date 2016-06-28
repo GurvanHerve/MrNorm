@@ -7,7 +7,7 @@ import com.navrug.mrnorm.interfaces.Pixmap;
 
 
 public class AndroidPixmap implements Pixmap {
-  private Bitmap _bitmap;
+  Bitmap _bitmap;
   private Graphics.PixmapFormat _format;
 
   public AndroidPixmap(Bitmap bitmap, Graphics.PixmapFormat format) {
