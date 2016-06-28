@@ -4,6 +4,7 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.media.AudioManager;
 import android.media.SoundPool;
+import android.support.v7.app.AppCompatActivity;
 
 import com.navrug.mrnorm.activity.Activity;
 import com.navrug.mrnorm.interfaces.Audio;
@@ -17,7 +18,7 @@ public class AndroidAudio implements Audio {
   private AssetManager _assets;
   private SoundPool _soundPool;
 
-  public AndroidAudio(Activity activity) {
+  public AndroidAudio(AppCompatActivity activity) {
     activity.setVolumeControlStream(AudioManager.STREAM_MUSIC);
     _assets = activity.getAssets();
     _soundPool = com.navrug.mrnorm.utils.SoundPool.getSoundPool();
