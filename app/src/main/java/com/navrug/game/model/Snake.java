@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Snake {
-  private final static int UP = 0;
-  private final static int LEFT = 1;
-  private final static int DOWN = 2;
-  private final static int RIGHT = 3;
+  public final static int UP = 0;
+  public final static int LEFT = 1;
+  public final static int DOWN = 2;
+  public final static int RIGHT = 3;
 
-  List<SnakePart> _parts = new ArrayList<>();
-  private int _direction;
+  public List<SnakePart> _parts = new ArrayList<>();
+  public int _direction;
 
   public Snake() {
     _direction = UP;

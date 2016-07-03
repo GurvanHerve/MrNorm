@@ -9,10 +9,10 @@ public class World {
   private static final float TICK_INITIAL = 0.5F;
   private static final float TICK_DECREMENT = 0.05F;
 
-  private Snake _snake;
-  private Stain _stain;
-  private boolean gameOver = false;
-  private int _score = 0;
+  public Snake _snake;
+  public Stain _stain;
+  public boolean _gameOver = false;
+  public int _score = 0;
 
   private boolean _fields[][] = new boolean[WORLD_WIDTH][WORLD_HEIGHT];
   private Random _random;
@@ -56,7 +56,7 @@ public class World {
   }
 
   public void update(int deltatime) {
-    if (gameOver) {
+    if (_gameOver) {
       return;
     }
 
@@ -66,7 +66,7 @@ public class World {
       _tickTime -= _tick;
       _snake.advance();
       if (_snake.checkBitten()) {
-        gameOver = true;
+        _gameOver = true;
         return;
       }
 
@@ -75,7 +75,7 @@ public class World {
         _score += SCORE_INCREMENT;
         _snake.eat();
         if (_snake._parts.size() == WORLD_HEIGHT * WORLD_WIDTH) {
-          gameOver = true;
+          _gameOver = true;
           return;
         } else {
           placeStain();
