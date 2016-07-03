@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.navrug.mrnorm"
+    package="com.navrug.game"
     android:installLocation="preferExternal">
 
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -13,7 +13,7 @@
       android:theme="@style/AppTheme">
 
     <activity
-        android:name=".tests.TestActivity"
+        android:name="com.navrug.game.mrnorm.MrNorm"
         android:screenOrientation="portrait"
         android:configChanges="keyboard|keyboardHidden|orientation">
       <intent-filter>
@@ -22,21 +22,21 @@
       </intent-filter>
     </activity>
 
-    <activity android:name=".tests.BitmapTest"/>
-    <activity android:name=".tests.AccelerometerTest"/>
-    <activity android:name=".tests.AssetsTest"/>
-    <activity android:name=".tests.ExternalStorageTest"/>
-    <activity android:name=".tests.FontTest"/>
-    <activity android:name=".tests.FullScreenTest"/>
-    <activity android:name=".tests.KeyTest"/>
-    <activity android:name=".tests.LifeCycleTest"/>
-    <activity android:name=".tests.MediaPlayerTest"/>
-    <activity android:name=".tests.MultiTouchTest"/>
-    <activity android:name=".tests.RenderViewTest"/>
-    <activity android:name=".tests.ShapeTest"/>
-    <activity android:name=".tests.SingleTouchTest"/>
-    <activity android:name=".tests.SoundPoolTest"/>
-    <activity android:name=".tests.SurfaceViewTest"/>
+    <activity android:name="com.navrug.game.tests.BitmapTest"/>
+    <activity android:name="com.navrug.game.tests.AccelerometerTest"/>
+    <activity android:name="com.navrug.game.tests.AssetsTest"/>
+    <activity android:name="com.navrug.game.tests.ExternalStorageTest"/>
+    <activity android:name="com.navrug.game.tests.FontTest"/>
+    <activity android:name="com.navrug.game.tests.FullScreenTest"/>
+    <activity android:name="com.navrug.game.tests.KeyTest"/>
+    <activity android:name="com.navrug.game.tests.LifeCycleTest"/>
+    <activity android:name="com.navrug.game.tests.MediaPlayerTest"/>
+    <activity android:name="com.navrug.game.tests.MultiTouchTest"/>
+    <activity android:name="com.navrug.game.tests.RenderViewTest"/>
+    <activity android:name="com.navrug.game.tests.ShapeTest"/>
+    <activity android:name="com.navrug.game.tests.SingleTouchTest"/>
+    <activity android:name="com.navrug.game.tests.SoundPoolTest"/>
+    <activity android:name="com.navrug.game.tests.SurfaceViewTest"/>
 
   </application>
 
