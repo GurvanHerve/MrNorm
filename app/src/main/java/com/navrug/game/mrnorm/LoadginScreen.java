@@ -13,7 +13,7 @@ public class LoadginScreen extends Screen {
   }
 
   @Override
-  public void update(float deltaTime) throws IllegalAccessException {
+  public void update(float deltaTime) {
     Graphics g = game.getGraphics();
     Assets._background = g.newPixmap("background.png", Graphics.PixmapFormat.RGB565);
     Assets._logo = g.newPixmap("logo.png", Graphics.PixmapFormat.ARGB4444);

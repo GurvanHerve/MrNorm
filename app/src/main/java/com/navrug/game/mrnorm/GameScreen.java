@@ -38,7 +38,7 @@ public class GameScreen extends Screen {
   }
 
   @Override
-  public void update(float deltaTime) throws IllegalAccessException {
+  public void update(float deltaTime) {
     List<Input.TouchEvent> events = game.getInput().getTouchEvents();
     game.getInput().getKeyEvents();
 
@@ -102,7 +102,7 @@ public class GameScreen extends Screen {
     }
   }
 
-  private void updatePaused(List<Input.TouchEvent> events) throws IllegalAccessException {
+  private void updatePaused(List<Input.TouchEvent> events) {
     for (Input.TouchEvent event : events) {
       if (event._type == Input.TouchEvent.TOUCH_UP) {
         if (event._x > 80 && event._x <= 240) {
@@ -124,7 +124,7 @@ public class GameScreen extends Screen {
     }
   }
 
-  private void updateGameOver(List<Input.TouchEvent> events) throws IllegalAccessException {
+  private void updateGameOver(List<Input.TouchEvent> events) {
     for (Input.TouchEvent event : events) {
       if (event._type == Input.TouchEvent.TOUCH_UP) {
         if (event._x >= 128 && event._x <= 192 && event._y >= 200 && event._y <= 264) {

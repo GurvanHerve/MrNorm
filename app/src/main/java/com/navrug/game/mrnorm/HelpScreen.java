@@ -16,7 +16,7 @@ public class HelpScreen extends Screen {
   }
 
   @Override
-  public void update(float deltaTime) throws IllegalAccessException {
+  public void update(float deltaTime) {
     List<Input.TouchEvent> events = game.getInput().getTouchEvents();
     game.getInput().getKeyEvents();
 

@@ -16,7 +16,7 @@ public class MainMenuScreen extends Screen {
   }
 
   @Override
-  public void update(float deltaTime) throws IllegalAccessException {
+  public void update(float deltaTime) {
     Graphics g = game.getGraphics();
     List<Input.TouchEvent> touchEvents = game.getInput().getTouchEvents();
     game.getInput().getKeyEvents();

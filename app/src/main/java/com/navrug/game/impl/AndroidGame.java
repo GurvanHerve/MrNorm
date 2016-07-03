@@ -97,9 +97,9 @@ public class AndroidGame extends AppCompatActivity implements Game {
   }
 
   @Override
-  public void setScreen(@NonNull Screen screen) throws IllegalAccessException {
+  public void setScreen(@NonNull Screen screen) {
     if (screen == null) {
-      throw new IllegalAccessException("Screen must not be null");
+      throw new RuntimeException("Screen must not be null");
     }
     _screen.pause();
     _screen.dispose();

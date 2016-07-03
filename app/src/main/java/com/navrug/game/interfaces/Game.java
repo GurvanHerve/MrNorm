@@ -5,7 +5,7 @@ public interface Game {
   FileIO getFileIO();
   Graphics getGraphics();
   Audio getAudio();
-  void setScreen(Screen screen) throws IllegalAccessException;
+  void setScreen(Screen screen);
   Screen getCurrentScreen();
   Screen getStartScreen();
 }
